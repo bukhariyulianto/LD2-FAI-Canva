@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Presentasi Praktikum Literasi Digital II</title><style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom scrollbar prevention / smooth transitions */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .transition-all-custom { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+
+*{box-sizing:border-box}html{height:100%;color-scheme:light}html.dark{color-scheme:dark}body{margin:0;font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;height:100dvh;min-height:0}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}button:disabled{opacity:.5;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}h1,h2,h3,h4,p{margin:0}table{border-collapse:collapse}textarea{resize:vertical}main,main>div,.tab-content{min-width:0;min-height:0}.tab-content>div,.tab-content>section{flex-shrink:0}.tab-content{overscroll-behavior:contain;padding-bottom:1rem}nav{scrollbar-width:thin}.nav-tab{text-align:left}.nav-tab[aria-current=page]{box-shadow:inset 3px 0 #059669}header{gap:.5rem}header>div:first-child{min-width:0}footer{gap:1rem;font-size:11px!important}a{color:#047857;text-underline-offset:3px}.dark a{color:#6ee7b7}button{min-height:42px}input[type=checkbox],input[type=radio]{accent-color:#047857;width:18px;height:18px;flex-shrink:0}.work-card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:24px}.dark .work-card{background:#0f172a;border-color:#1e293b}.work-card h3{font-size:18px;margin-bottom:12px}.work-card p,.work-card li{font-size:14px}.work-card label{display:block;font-weight:600;margin:16px 0 6px}.work-card textarea{display:block;width:100%;padding:12px;border:1px solid #94a3b8;border-radius:10px;background:transparent;color:inherit}.work-card button,.study-actions button{background:#047857;color:white;padding:9px 14px;border-radius:10px}.work-card button{margin-top:14px}.study-toolbar{border-top:1px solid #cbd5e1;background:white;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0}.dark .study-toolbar{background:#0f172a;border-color:#334155}.study-toolbar label{font-size:12px}progress{display:block;width:180px;height:8px;accent-color:#047857}.study-actions{display:flex;gap:8px;flex-wrap:wrap}.study-actions button{font-size:12px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.skip-link{position:fixed;left:10px;top:-100px;z-index:99;background:white;color:black;padding:12px}.skip-link:focus{top:10px}#appStatus:not(:empty){position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:#0f172a;color:white;z-index:100;width:auto;max-width:90vw;height:auto;clip-path:none;padding:10px 16px;border-radius:10px;pointer-events:none}body:has(#quizResult:not(.hidden)) #appStatus:empty{display:none}.bg-gradient-to-r{background:linear-gradient(120deg,#047857,#0f766e)}.fa-solid{display:inline-block;font-style:normal;min-width:1em;text-align:center}.fa-solid:before{content:'•'}.fa-graduation-cap:before{content:'▣'}.fa-moon:before{content:'☾'}.fa-sun:before{content:'☀'}.fa-check:before,.fa-circle-check:before{content:'✓'}.fa-circle-xmark:before{content:'✕'}.fa-compass:before{content:'◈'}.fa-cubes:before{content:'▦'}.fa-terminal:before{content:'›_'}.fa-network-wired:before{content:'⌘'}.fa-copy:before{content:'▣'}.fa-arrow-right:before{content:'→'}.fa-volume-xmark:before{content:'♪×'}.fa-volume-high:before{content:'♪'}.fa-brain:before{content:'✧'}.fa-bolt:before{content:'✓'}.fa-trophy:before{content:'★'}.fa-laptop-code:before{content:'▰'}.fa-shield-halved:before{content:'◇'}.fa-wand-magic:before,.fa-wand-magic-sparkles:before{content:'✦'}.absolute{position:absolute}.bg-cyan-100{background-color:#cffafe}.bg-emerald-100{background-color:#d1fae5}.bg-emerald-50{background-color:#ecfdf5}.bg-emerald-600{background-color:#047857}.bg-indigo-100{background-color:#e0e7ff}.bg-rose-50{background-color:#fff1f2}.bg-slate-100{background-color:#f1f5f9}.bg-slate-50{background-color:#f8fafc}.bg-teal-100{background-color:#ccfbf1}.bg-white{background-color:#ffffff}.bg-white\/20{background-color:#ffffff}.block{display:block}.border{border:1px solid #e2e8f0}.border-b{border-bottom:1px solid #e2e8f0}.border-emerald-200{border-color:#a7f3d0}.border-r{border-right:1px solid #e2e8f0}.border-rose-200{border-color:#fecdd3}.border-slate-100{border-color:#f1f5f9}.border-slate-200{border-color:#e2e8f0}.border-t{border-top:1px solid #e2e8f0}.cursor-pointer{cursor:pointer}.dark .dark\:bg-cyan-950\/60{background-color:#083344}.dark .dark\:bg-emerald-950\/30{background-color:#022c22}.dark .dark\:bg-emerald-950\/40{background-color:#022c22}.dark .dark\:bg-emerald-950\/60{background-color:#022c22}.dark .dark\:bg-indigo-950\/60{background-color:#1e1b4b}.dark .dark\:bg-rose-950\/40{background-color:#4c0519}.dark .dark\:bg-slate-800{background-color:#1e293b}.dark .dark\:bg-slate-900{background-color:#0f172a}.dark .dark\:bg-slate-950{background-color:#020617}.dark .dark\:bg-teal-950\/60{background-color:#042f2e}.dark .dark\:border-emerald-800{border-color:#065f46}.dark .dark\:border-emerald-800\/50{border-color:#065f46}.dark .dark\:border-rose-800{border-color:#9f1239}.dark .dark\:border-slate-700{border-color:#334155}.dark .dark\:border-slate-800{border-color:#1e293b}.dark .dark\:hover\:bg-slate-700:hover{background-color:#334155}.dark .dark\:hover\:bg-slate-800\/40:hover{background-color:#1e293b}.dark .dark\:hover\:bg-slate-800\/60:hover{background-color:#1e293b}.dark .dark\:text-cyan-300{color:#67e8f9}.dark .dark\:text-cyan-400{color:#22d3ee}.dark .dark\:text-emerald-300{color:#6ee7b7}.dark .dark\:text-emerald-400{color:#34d399}.dark .dark\:text-indigo-300{color:#a5b4fc}.dark .dark\:text-indigo-400{color:#818cf8}.dark .dark\:text-rose-300{color:#fda4af}.dark .dark\:text-slate-100{color:#f1f5f9}.dark .dark\:text-slate-200{color:#e2e8f0}.dark .dark\:text-slate-300{color:#cbd5e1}.dark .dark\:text-slate-400{color:#94a3b8}.dark .dark\:text-teal-300{color:#5eead4}.dark .dark\:text-teal-400{color:#2dd4bf}.flex{display:flex}.flex-1{flex:1 1 0%}.flex-col{flex-direction:column}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-mono{font-family:ui-monospace,monospace}.font-semibold{font-weight:600}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1.0rem}.grid{display:grid}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.h-10{height:2.5rem}.h-12{height:3.0rem}.h-full{height:100%}.hidden{display:none!important}.hover\:bg-emerald-700:hover{background-color:#065f46}.hover\:bg-slate-100:hover{background-color:#f1f5f9}.hover\:bg-slate-200:hover{background-color:#e2e8f0}.hover\:bg-slate-50:hover{background-color:#f8fafc}.italic{font-style:italic}.items-center{align-items:center}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.leading-relaxed{line-height:1.7}.leading-tight{line-height:1.25}@media(min-width:1024px){.lg\:p-8{padding:2.0rem}}.max-w-3xl{max-width:48rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1.0rem}@media(min-width:768px){.md\:flex-col{flex-direction:column}}@media(min-width:768px){.md\:flex-row{flex-direction:row}}@media(min-width:768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(min-width:768px){.md\:overflow-y-auto{overflow-y:auto}}@media(min-width:768px){.md\:space-x-0 > :not(:first-child){margin-left:0.0rem}}@media(min-width:768px){.md\:space-y-1 > :not(:first-child){margin-top:0.25rem}}@media(min-width:768px){.md\:w-64{width:16.0rem}}.mr-1{margin-right:0.25rem}.mr-1\.5{margin-right:0.375rem}.mr-2\.5{margin-right:0.625rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1.0rem}.mx-auto{margin-left:auto;margin-right:auto}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1.0rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.pr-2{padding-right:0.5rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.px-2{padding-inline:0.5rem}.px-2\.5{padding-inline:0.625rem}.px-3{padding-inline:0.75rem}.px-3\.5{padding-inline:0.875rem}.px-4{padding-inline:1.0rem}.px-5{padding-inline:1.25rem}.py-0\.5{padding-block:0.125rem}.py-1{padding-block:0.25rem}.py-2\.5{padding-block:0.625rem}.py-3{padding-block:0.75rem}.relative{position:relative}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.shadow-lg{box-shadow:0 10px 25px #00000016}.shadow-md{box-shadow:0 4px 10px #00000014}.shadow-sm{box-shadow:0 1px 3px #00000012}.shadow-xs{box-shadow:0 1px 2px #00000009}.shrink-0{flex-shrink:0}@media(min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:640px){.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(min-width:640px){.sm\:inline{display:inline}}@media(min-width:640px){.sm\:p-6{padding:1.5rem}}@media(min-width:640px){.sm\:p-8{padding:2.0rem}}@media(min-width:640px){.sm\:text-3xl{font-size:2rem}}@media(min-width:640px){.sm\:text-base{font-size:1rem}}@media(min-width:640px){.sm\:text-sm{font-size:.93rem}}.space-x-1 > :not(:first-child){margin-left:0.25rem}.space-x-2 > :not(:first-child){margin-left:0.5rem}.space-x-2\.5 > :not(:first-child){margin-left:0.625rem}.space-x-3 > :not(:first-child){margin-left:0.75rem}.space-y-2 > :not(:first-child){margin-top:0.5rem}.space-y-3 > :not(:first-child){margin-top:0.75rem}.space-y-4 > :not(:first-child){margin-top:1.0rem}.space-y-6 > :not(:first-child){margin-top:1.5rem}.text-2xl{font-size:1.65rem}.text-9xl{font-size:8rem}.text-\[10px\]{font-size:.75rem}.text-base{font-size:1rem}.text-center{text-align:center}.text-cyan-600{color:#0891b2}.text-cyan-700{color:#0e7490}.text-emerald-100{color:#d1fae5}.text-emerald-500{color:#10b981}.text-emerald-600{color:#047857}.text-emerald-700{color:#065f46}.text-emerald-800{color:#065f46}.text-indigo-600{color:#4f46e5}.text-indigo-700{color:#4338ca}.text-left{text-align:left}.text-lg{font-size:1.15rem}.text-rose-700{color:#be123c}.text-slate-500{color:#64748b}.text-slate-600{color:#475569}.text-slate-700{color:#334155}.text-slate-800{color:#1e293b}.text-slate-900{color:#0f172a}.text-sm{font-size:.93rem}.text-teal-600{color:#0d9488}.text-teal-700{color:#0f766e}.text-white{color:#ffffff}.text-white\/10{color:#ffffff}.text-xl{font-size:1.35rem}.text-xs{font-size:.85rem}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.uppercase{text-transform:uppercase}.w-10{width:2.5rem}.w-12{width:3.0rem}.w-5{width:1.25rem}.w-full{width:100%}.whitespace-pre-line{white-space:pre-line}.z-10{z-index:10}.z-20{z-index:20}@media(max-width:767px){header{padding:10px!important}header h1{font-size:14px}header p{font-size:10px}nav{max-height:70px;min-height:56px}.study-toolbar{flex-direction:column;align-items:stretch;padding:8px 12px;gap:5px}.study-toolbar>div:first-child{display:flex;align-items:center;gap:12px}progress{width:90px}.study-actions{flex-wrap:nowrap;gap:5px}.study-actions button{padding:7px 8px;flex:1;font-size:11px;min-height:38px}footer{display:none!important}.tab-content{padding-right:0!important}.work-card{padding:18px}.tab-content .text-xs{font-size:.87rem}.nav-tab{font-size:13px!important;padding:10px!important}.tab-content .grid-cols-1{grid-template-columns:1fr}.tab-content>div{max-width:100%}.tab-content table{min-width:290px}#tab-quiz [class*="justify-between"]{flex-wrap:wrap;gap:8px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}@media print{html,body{height:auto!important;overflow:visible!important;background:white!important;color:black!important}header,nav,footer,.study-toolbar,.skip-link,#appStatus,button{display:none!important}main,main>div{display:block!important;overflow:visible!important;padding:0!important}.tab-content{display:block!important;overflow:visible!important;page-break-before:always}.tab-content:first-child{page-break-before:auto}.tab-content>div,.work-card{break-inside:avoid;background:white!important;color:black!important;box-shadow:none!important}.dark *{color:black!important;background-color:white!important}textarea{height:auto;min-height:80px}a{color:black!important}.bg-gradient-to-r{background:white!important;color:black!important}}
+    .bg-white\/20{background-color:rgb(255 255 255 / .18)}.sm\:inline{display:inline}@media(max-width:639px){.sm\:inline{display:none}}
+
+:root{--paper:#fff;--ink:#16262d;--muted:#53676c;--stage:#e9efed;--line:#dbe5df;--accent:#08795c}html.dark{--paper:#112426;--ink:#eff7f3;--muted:#b7cac5;--stage:#061416;--line:#28453e;--accent:#6ee7b7}body{background:var(--stage)!important;color:var(--ink)!important;display:grid!important;grid-template-rows:auto 1fr auto;height:100dvh;overflow:hidden;margin:0}body>header{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:var(--paper);border-bottom:1px solid var(--line);gap:20px}header strong{font-size:14px;display:block;letter-spacing:.01em}header small{font-size:11px;color:var(--muted)}.header-tools{display:flex;gap:8px;align-items:center}.header-tools button{border-radius:9px;background:var(--stage);color:var(--ink);padding:8px 12px;font-size:12px}main#mainContent{display:block!important;min-height:0;overflow:hidden;padding:22px 32px}section.slide{width:min(1200px,100%);height:100%;margin:auto;display:flex;flex-direction:column;gap:12px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,3.2vw,44px);overflow:hidden;box-shadow:0 14px 50px #122b2110;position:relative}.slide.hidden{display:none!important}.slide-top{display:flex;justify-content:space-between;align-items:center}.eyebrow{font-size:10px;letter-spacing:.18em;color:var(--accent);font-weight:700}.slide-number{font-size:13px;color:var(--muted)}.slide-title{font-size:clamp(25px,2.7vw,39px);line-height:1.18;letter-spacing:-.035em;font-weight:750;max-width:1000px;margin:0 0 8px}.slide-content{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-right:8px;scrollbar-width:thin}.slide-content>div,.slide-content>section{margin-bottom:16px}.slide-content .text-xs,.slide-content .text-sm,.slide-content .work-card p,.slide-content .work-card li{font-size:clamp(15px,1.25vw,18px);line-height:1.6}.slide-content h3,.slide-content h4{font-size:clamp(18px,1.6vw,24px);line-height:1.4}.slide-content .text-\[10px\]{font-size:12px}.slide-content [class*="shadow"]{box-shadow:none}.slide-content .rounded-2xl:not(.bg-gradient-to-r),.slide-content .work-card{border-radius:0;border:0!important;background:transparent!important;padding:10px 0!important}.slide-content .two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px}.slide-content .two-col>div{border-top:2px solid var(--accent)!important;padding:22px 0!important}.slide-content .two-col .text-xs{font-size:18px}.slide-content .work-card{padding:0!important}.slide-content table{width:100%}.slide-content th,.slide-content td{padding:10px!important;font-size:16px;line-height:1.45}.slide-content #generatedPromptText{font-size:15px;line-height:1.6;font-style:normal}.slide-content .work-card textarea{font-size:15px;min-height:72px}.slide-content .work-card label{margin-top:10px;font-size:15px}.slide-content #skillTemplateBox{font-size:16px;line-height:1.75}.slide-content .bg-gradient-to-r{padding:clamp(20px,3vw,40px)!important;min-height:75%;display:flex;flex-direction:column;justify-content:center}.cover .slide-title{display:none}.cover .slide-content h2{font-size:clamp(28px,4vw,54px);max-width:920px;line-height:1.12;margin-top:24px}.cover .slide-content p{font-size:clamp(17px,1.6vw,23px);max-width:850px}.cover .slide-content>div{height:100%;margin:0}.cover .slide-content .bg-white\/20{align-self:flex-start}.caption{font-size:15px;color:var(--muted);margin-top:20px}.deck-controls{background:var(--paper);border-top:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:20px;justify-content:space-between}.deck-location{display:flex;flex-direction:column;gap:6px;min-width:220px}.deck-location select{font-size:12px;padding:6px;border-radius:7px;background:var(--stage);color:var(--ink);border:1px solid var(--line);max-width:300px}.deck-location progress{width:100%;height:5px}.deck-buttons{display:flex;align-items:center;gap:8px}.deck-buttons button,.primary{padding:10px 18px;background:#08795c;color:#fff;border-radius:9px;font-size:14px;font-weight:600}.deck-buttons button.secondary{background:var(--stage);color:var(--ink)}#progressText{font-size:13px;color:var(--muted);min-width:50px;text-align:center}#completionText{font-size:11px;color:var(--muted)}fieldset{border:0;padding:0;margin:0;min-width:0}legend{font-size:clamp(20px,2vw,29px);font-weight:650;line-height:1.4;margin-bottom:22px}.options{display:grid;gap:12px}.quiz-option{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);padding:15px 18px;border-radius:10px;cursor:pointer;font-size:17px;line-height:1.5}.quiz-option:has(input:checked){border-color:var(--accent);background:var(--stage)}.quiz-option b{display:inline-block;margin-right:12px;color:var(--accent)}.quiz-option input{margin-top:5px}details{font-size:14px;margin-top:14px;color:var(--muted)}summary{cursor:pointer}details p{margin-top:8px}.lead{font-size:21px;line-height:1.6;margin-bottom:20px}.closing{padding-top:24px;border-top:1px solid var(--line);margin-top:28px;font-size:19px}.closing p{margin-top:8px;color:var(--muted)}#quizResult{margin-top:20px}#quizResult h3{font-size:26px}#quizScoreText{font-size:24px}.slide-content [id^=feedback_]{font-size:16px!important;margin-top:18px!important}#appStatus:not(:empty){bottom:110px}.key-hint{font-size:11px;color:var(--muted);white-space:nowrap}@media(max-width:800px){body>header{padding:10px 14px}header small{display:none}.header-tools button{padding:7px 9px;font-size:11px}.key-hint{display:none}main#mainContent{padding:12px}.slide{padding:22px!important;border-radius:14px!important;gap:10px!important}.slide-title{font-size:26px}.slide-content .two-col{grid-template-columns:1fr;gap:12px}.slide-content .two-col .text-xs{font-size:16px}.slide-content .grid{grid-template-columns:1fr!important}.deck-controls{padding:10px 12px;gap:10px;flex-wrap:wrap}.deck-location{min-width:0;flex:1}.deck-location select{width:100%;max-width:none}.deck-buttons{width:100%;justify-content:space-between}.deck-buttons button{padding:8px 12px;font-size:12px}.deck-buttons #completeTab{font-size:11px}.slide-content .text-xs,.slide-content .text-sm{font-size:16px}.slide-content table td,.slide-content table th{font-size:14px}.quiz-option{font-size:16px;padding:12px;gap:10px}legend{font-size:20px;margin-bottom:16px}.slide-content #skillTemplateBox{font-size:14px;line-height:1.65}.eyebrow{font-size:8px}.slide-content .work-card p{font-size:14px}.slide-content .work-card textarea{min-height:80px}.slide-content label{align-items:start}.cover .slide-content .bg-gradient-to-r{min-height:100%}}@media(max-height:650px) and (min-width:801px){main#mainContent{padding:10px 22px}.slide{padding:18px 28px}.slide-title{font-size:27px}.slide-content .text-xs,.slide-content .text-sm{font-size:15px}.slide-content td,.slide-content th{font-size:14px;padding:5px!important}.slide-content #skillTemplateBox{font-size:14px;line-height:1.5}.deck-controls{padding:7px 18px}}@media print{@page{size:A4 landscape;margin:12mm}body{display:block!important}body>header,.deck-controls{display:none!important}main#mainContent{padding:0!important;overflow:visible!important}.slide,.slide.hidden{display:block!important;width:100%!important;height:auto!important;min-height:165mm;break-after:page;break-before:auto!important;margin:0;border:0!important;box-shadow:none!important;padding:8mm!important}.slide-content{overflow:visible!important;height:auto!important}.slide-content .bg-gradient-to-r{background:white!important;color:black!important}.slide-content .bg-gradient-to-r *{color:black!important}.slide-content>div,.slide-content>section{break-inside:auto}.slide-content fieldset{break-inside:avoid}.slide-top{display:flex!important}.cover .slide-title{display:block}.slide:last-child{break-after:auto}}
+@media(max-width:800px){footer.deck-controls{display:flex!important}.header-tools #soundText{display:none}}
+@media print{footer.deck-controls{display:none!important}}
+</style></head><body>
+<a class="skip-link" href="#mainContent">Langsung ke slide</a><header><div><strong>Literasi Digital II</strong><small>STIT Ad-Da’wah Rangkasbitung · PAI Semester 7</small></div><div class="header-tools"><span class="key-hint">← → Geser slide · F Layar penuh</span><button id="soundToggle" aria-label="Efek suara" aria-pressed="false" onclick="toggleSound()"><i id="soundIcon" class="fa-solid fa-volume-xmark"></i><span id="soundText">Suara: Off</span></button><button id="themeToggle" aria-label="Ganti tema" aria-pressed="false" onclick="toggleDarkMode()"><i id="themeIcon" class="fa-solid fa-moon"></i></button><button id="fullscreenBtn" aria-pressed="false" onclick="toggleFullscreen()">⛶ Layar penuh</button></div></header>
+<main id="mainContent" tabindex="-1" aria-label="Slide presentasi"><section id="tab-overview" class="tab-content slide hidden cover" aria-labelledby="title-overview"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">01</span></div><h2 id="title-overview" class="slide-title">Merancang media Pendidikan Islam</h2><div class="slide-content"><div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-2xl p-6 sm:p-8 shadow-lg relative overflow-hidden shrink-0">
+                    <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Pertemuan Lanjutan · 23 Oktober 2026</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-3 tracking-tight">Menggunakan AI untuk Membangun Produk Digital Pendidikan Berbasis Canva</h2>
+                    <p class="mt-2 text-emerald-100 text-sm sm:text-base max-w-3xl">
+                        Target akhir praktikum ini bukan sekadar mahir meminta AI mendesain, melainkan menghasilkan media pembelajaran PAI yang benar secara isi, menarik secara visual, teruji manfaatnya, dan dapat dipertanggungjawabkan.
+                    </p>
+                </div>
+
+                </div></section><section id="tab-outcomes" class="tab-content slide hidden " aria-labelledby="title-outcomes"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">02</span></div><h2 id="title-outcomes" class="slide-title">Apa yang akan Anda hasilkan</h2><div class="slide-content"><div class="grid grid-cols-1 md:grid-cols-3 gap-4 shrink-0">
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold mb-3">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base">Tujuan Utama</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Menyusun prompt terstruktur, menggunakan AI sebagai mitra berpikir kritis, serta memproduksi media Canva bertema Pendidikan Islam.</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <div class="w-10 h-10 rounded-xl bg-teal-100 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold mb-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base">Verifikasi &amp; Etika</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Pemeriksaan fakta, sumber rujukan keagamaan, hak cipta aset visual, privasi, serta menghindari klaim agama tanpa dasar.</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold mb-3">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base">Luaran Praktikum</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">Satu media pembelajaran digital Canva, catatan prompt utama, lembar verifikasi fakta, serta refleksi proses pembuatan.</p>
+                    </div>
+                </div>
+
+                </div></section><section id="tab-competencies" class="tab-content slide hidden " aria-labelledby="title-competencies"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">03</span></div><h2 id="title-competencies" class="slide-title">Kemampuan yang dilatih</h2><div class="slide-content"><div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs flex-1">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4 flex items-center">
+                        <i class="fa-solid fa-list-check text-emerald-600 mr-2.5"></i> Ringkasan Kompetensi Mahasiswa
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600 dark:text-slate-300">
+                        <div class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <span>Menyusun prompt instruksional dengan kerangka tujuan, peran, konteks, tugas, batasan, format, dan kriteria.</span>
+                        </div>
+                        <div class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <span>Menggunakan AI sebagai partner edukasi tanpa menghilangkan peran penilaian profesional pendidik.</span>
+                        </div>
+                        <div class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <span>Menerapkan alur kerja berulang melalui pembuatan Skill Evaluator PAI siap pakai.</span>
+                        </div>
+                        <div class="flex items-start space-x-2.5">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <span>Memahami Model Context Protocol (MCP) sebagai protokol penghubung AI dengan data eksternal.</span>
+                        </div>
+                    </div>
+                </div>
+            </div></section><section id="tab-concepts" class="tab-content slide hidden " aria-labelledby="title-concepts"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">04</span></div><h2 id="title-concepts" class="slide-title">Instruksi dan prosedur yang bisa diulang</h2><div class="slide-content"><div class="two-col"><!-- Concept 1 -->
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold text-xs px-2.5 py-1 rounded-lg">Tahap 01</span>
+                                <i class="fa-solid fa-terminal text-emerald-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base">PROMPT</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">Cara memberi instruksi presisi kepada AI. Prompt yang baik menyertakan konteks, tujuan, batasan, format, dan kriteria kualitas hasil kerja.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+                            <i class="fa-solid fa-arrow-right mr-1"></i> Fokus: Instruksi &amp; Konteks Awal
+                        </div>
+                    </div>
+
+                    </div></div></section><section id="tab-concepts-next" class="tab-content slide hidden " aria-labelledby="title-concepts-next"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">05</span></div><h2 id="title-concepts-next" class="slide-title">Proyek dan koneksi alat</h2><div class="slide-content"><div class="two-col"><!-- Concept 2 -->
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="bg-teal-100 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 font-bold text-xs px-2.5 py-1 rounded-lg">Tahap 02</span>
+                                <i class="fa-solid fa-wand-magic-sparkles text-teal-600 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 dark:text-slate-100 text-base">SKILL</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">Prosedur terstruktur yang dapat digunakan kembali secara berulang untuk menyelesaikan tugas spesifik tanpa menyusun aturan dari nol.</p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-teal-600 dark:text-teal-400 font-medium">
+                            <i class="fa-solid fa-arrow-right mr-1"></i> Fokus: Prosedur Kerja Konsisten
+                        </div>
+                    </div>
+
+                    </div><p class="caption">Keempat komponen saling mendukung. Integrasi MCP bersifat opsional.</p></div></section><section id="tab-prompt-framework" class="tab-content slide hidden " aria-labelledby="title-prompt-framework"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">06</span></div><h2 id="title-prompt-framework" class="slide-title">Tujuh unsur prompt pendidikan</h2><div class="slide-content"><div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center">
+                        <i class="fa-solid fa-calculator text-emerald-600 mr-2.5"></i> Rumus Prompt Pendidikan
+                    </h3>
+                    <div class="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-xl p-4 text-xs sm:text-sm font-semibold text-emerald-800 dark:text-emerald-300 mb-4 text-center">
+                        TUJUAN + PERAN + KONTEKS + TUGAS + BATASAN + FORMAT + KRITERIA
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left text-slate-600 dark:text-slate-300">
+                            <thead class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold uppercase text-[10px]">
+                                <tr>
+                                    <th class="p-2.5 rounded-l-lg">Elemen</th>
+                                    <th class="p-2.5 rounded-r-lg">Pertanyaan Kunci</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Tujuan</td><td class="p-2.5">Apa hasil spesifik yang ingin dicapai?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Peran</td><td class="p-2.5">Keahlian apa yang harus disimulasikan oleh AI?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Konteks</td><td class="p-2.5">Untuk audiens, mapel, dan jenjang pendidikan apa?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Tugas</td><td class="p-2.5">Apa instruksi spesifik yang harus dikerjakan AI?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Batasan</td><td class="p-2.5">Apa hal yang tidak boleh dilakukan atau diasumsikan?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Format</td><td class="p-2.5">Bentuk keluaran (tabel, naskah, storyboard, dll)?</td></tr>
+                                <tr><td class="p-2.5 font-semibold text-emerald-600">Kriteria</td><td class="p-2.5">Bagaimana mengukur kualitas hasil kerja tersebut?</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                </div></section><section id="tab-prompt" class="tab-content slide hidden interactive" aria-labelledby="title-prompt"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">07</span></div><h2 id="title-prompt" class="slide-title">Rakit prompt sesuai kebutuhan</h2><div class="slide-content"><div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 mb-2 flex items-center">
+                        <i class="fa-solid fa-wand-magic text-emerald-600 mr-2.5"></i> Laboratorium Generator Prompt Interaktif
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Pilih parameter di bawah ini untuk merakit prompt instan yang siap disalin.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="genJenjang" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Jenjang Audiens</label>
+                            <select id="genJenjang" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-2.5 text-xs text-slate-800 dark:text-slate-200 focus:outline-emerald-500">
+                                <option value="Siswa SMA">Siswa SMA</option>
+                                <option value="Siswa SMP">Siswa SMP</option>
+                                <option value="Siswa SD">Siswa SD</option>
+                                <option value="Mahasiswa PAI">Mahasiswa</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="genProduk" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Jenis Produk Canva</label>
+                            <select id="genProduk" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-2.5 text-xs text-slate-800 dark:text-slate-200 focus:outline-emerald-500">
+                                <option value="Infografik Edukasi">Infografik Edukasi</option>
+                                <option value="Presentasi Ringkas">Presentasi Ringkas</option>
+                                <option value="E-Modul Interaktif">E-Modul Interaktif</option>
+                                <option value="Poster Edukasi">Poster Edukasi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="genTopik" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Topik / Materi PAI</label>
+                        <input type="text" id="genTopik" maxlength="180" value="Tabayyun dan Verifikasi Berita di Era Digital" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-2.5 text-xs text-slate-800 dark:text-slate-200 focus:outline-emerald-500">
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 mb-4">
+                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Hasil Prompt Siap Pakai:</span>
+                        <p id="generatedPromptText" tabindex="0" class="text-xs text-slate-700 dark:text-slate-300 italic font-mono leading-relaxed">
+                            Bertindaklah sebagai perancang media pembelajaran Pendidikan Agama Islam. Buat rancangan infografik tentang Tabayyun dan Verifikasi Berita di Era Digital untuk Siswa SMA. Tujuannya agar siswa mampu membedakan informasi terverifikasi. Susun judul, 1 pesan utama, 5 langkah pemeriksaan, dan 1 studi kasus. Gunakan bahasa Indonesia sederhana dan sajikan dalam format tabel.
+                        </p>
+                    </div>
+
+                    <button onclick="copyGeneratedPrompt()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-solid fa-copy"></i>
+                        <span id="copyPromptBtnText">Salin Prompt Lengkap</span>
+                    </button>
+                </div>
+            </div></section><section id="tab-skill" class="tab-content slide hidden interactive" aria-labelledby="title-skill"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">08</span></div><h2 id="title-skill" class="slide-title">Simpan prosedur evaluasi yang konsisten</h2><div class="slide-content"><div>
+                    <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Praktik 2 — Membangun SKILL AI untuk Pendidikan</h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Simpan template instruksi ini sebagai dokumen untuk dipakai kembali. Menyalin teks tidak otomatis memasang fitur skill permanen; dukungan fitur berbeda antar aplikasi.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 flex items-center">
+                            <i class="fa-solid fa-file-lines text-emerald-600 mr-2.5"></i> Template: Evaluator Media Pembelajaran PAI v1.1
+                        </h3>
+                        <span class="bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 text-[10px] font-bold px-2.5 py-1 rounded-lg">Siap Disalin</span>
+                    </div>
+
+                    <div id="skillTemplateBox" class="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 font-mono text-xs text-slate-700 dark:text-slate-300 whitespace-pre-line leading-relaxed mb-4">SKILL: Evaluator Media Pembelajaran PAI v1.0
+Peran: Anda adalah evaluator media pembelajaran digital PAI. Bantu pengguna meningkatkan mutu pembelajaran.
+Prosedur Kerja:
+1. Identifikasi audiens, tujuan pembelajaran, dan jenis produk.
+2. Periksa kesesuaian isi dengan tujuan PAI.
+3. Tandai fakta, kutipan, dan klaim keagamaan yang memerlukan verifikasi.
+4. Evaluasi struktur, bahasa, keterbacaan, dan aksesibilitas.
+5. Periksa privasi, hak cipta, dan potensi salah tafsir.
+6. Berikan rekomendasi perbaikan konkret.
+Format Keluaran: Kekuatan produk, masalah ditemukan, prioritas perbaikan, sumber yang perlu diperiksa, dan daftar pemeriksaan akhir.
+Batasan: Jangan mengarang dalil atau kutipan. Jangan menggantikan penilaian profesional dosen.</div>
+
+                    <button onclick="copySkillTemplate()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors flex items-center justify-center space-x-2 shadow-sm">
+                        <i class="fa-solid fa-copy"></i>
+                        <span id="copySkillBtnText">Salin Template Skill</span>
+                    </button>
+                </div>
+            </div></section><section id="tab-project-flow" class="tab-content slide hidden " aria-labelledby="title-project-flow"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">09</span></div><h2 id="title-project-flow" class="slide-title">Dari brief menuju produk Canva</h2><div class="slide-content"><div>
+                    <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Praktik 3 — Membuat PROJECT Canva</h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Proyek: Tabayyun di Era Digital (Target Siswa SMA)</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <span class="text-emerald-600 font-bold text-xs">Tahap 01 &amp; 02</span>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mt-1">Kebutuhan &amp; Storyboard</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tentukan audiens SMA, rumuskan tujuan, lalu gunakan prompt naskah dengan judul, pesan utama, tiga tindakan, dan ajakan untuk menyusun draf materi.</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <span class="text-emerald-600 font-bold text-xs">Tahap 03</span>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mt-1">Verifikasi Ketat</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Cek fakta, rujukan Al-Qur'an/Hadis, dan pastikan tidak ada dalil buatan AI yang lolos ke desain.</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+                        <span class="text-emerald-600 font-bold text-xs">Tahap 04 &amp; 05</span>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-100 text-sm mt-1">Desain &amp; Evaluasi Canva</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Buat desain vertikal 1080 × 1350 piksel sebagai ukuran latihan, tata judul–pesan–tiga tindakan–ajakan, lalu unduh PNG. Buka hasilnya di ponsel, periksa keterbacaan dan sumber, kemudian revisi.</p>
+                    </div>
+                </div>
+
+                </div></section><section id="tab-project" class="tab-content slide hidden interactive" aria-labelledby="title-project"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">10</span></div><h2 id="title-project" class="slide-title">Periksa sebelum mengumpulkan</h2><div class="slide-content"><div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
+                    <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center">
+                        <i class="fa-solid fa-clipboard-check text-emerald-600 mr-2.5"></i> Daftar Pemeriksaan Mutu <span id="checkCount">(0/8)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-300">
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Tujuan pembelajaran jelas &amp; terarah</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Isi, fakta, dan rujukan agama telah diverifikasi</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Prompt utama dan revisi terdokumentasi</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Peran AI transparan &amp; dipertanggungjawabkan</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Desain terbaca nyaman di layar ponsel</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Hak cipta &amp; privasi aset telah diperiksa</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Produk diuji oleh minimal 1 rekan</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="rounded text-emerald-600"><span>Berkas ekspor atau tautan Canva dapat diakses dosen</span></label>
+                    </div>
+                </div>
+                </div></section><section id="tab-worksheet" class="tab-content slide hidden interactive" aria-labelledby="title-worksheet"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">11</span></div><h2 id="title-worksheet" class="slide-title">Dokumentasikan keputusan Anda</h2><div class="slide-content"><section class="work-card" aria-labelledby="workTitle">
+<h3 id="workTitle">Lembar kerja proyek</h3>
+<p>Catatan disimpan di peramban ini jika penyimpanan tersedia. Unduh salinannya untuk dikumpulkan. Tidak ada data yang dikirim ke dosen atau server.</p>
+<label for="workBrief">Brief dan tujuan yang dapat diamati</label><textarea id="workBrief" rows="3" placeholder="Audiens, masalah, tujuan, dan jenis produk"></textarea>
+<label for="workSources">Catatan verifikasi sumber</label><textarea id="workSources" rows="4" placeholder="Klaim — URL sumber — bagian atau halaman — tanggal diperiksa — keputusan"></textarea>
+<label for="workReflection">Refleksi dan kontribusi AI</label><textarea id="workReflection" rows="3" placeholder="Bagian yang dibantu AI, keputusan Anda, serta revisi dari ulasan teman"></textarea>
+<button type="button" onclick="downloadWork()">Unduh catatan praktikum</button><p id="saveStatus" role="status"></p>
+</section>
+            </div></section><section id="tab-mcp" class="tab-content slide hidden " aria-labelledby="title-mcp"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">12</span></div><h2 id="title-mcp" class="slide-title">Mengenal koneksi AI dengan alat</h2><div class="slide-content"><div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs space-y-4">
+                    <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 flex items-center">
+                        <i class="fa-solid fa-network-wired text-emerald-600 mr-2.5"></i> Apa itu MCP?
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        MCP adalah standar untuk menghubungkan aplikasi AI dengan sumber data dan alat eksternal. Tidak semua konektor memakai MCP. Akses baca atau tulis bergantung pada alat dan izin; protokol ini tidak otomatis menjamin keamanan.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4">
+                            <h4 class="font-bold text-xs text-emerald-600 uppercase tracking-wider mb-2">Jalur A (Disarankan untuk Kuliah)</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400">AI Percakapan + Canva Manual. Mahasiswa menyusun storyboard dengan AI, verifikasi mandiri, lalu merakit desain di Canva secara manual. Tanpa konfigurasi server yang rumit.</p>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4">
+                            <h4 class="font-bold text-xs text-indigo-600 uppercase tracking-wider mb-2">Jalur B (Pengayaan Lanjutan)</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400">Integrasi alat melalui MCP, jika tersedia dan diizinkan. Periksa dokumentasi resmi, cakupan akses, serta tindakan yang didukung. Demonstrasi cukup memakai data contoh; mahasiswa tidak wajib menghubungkan akun.</p>
+                        </div>
+                    </div>
+                </div>
+</div></section><section id="tab-references" class="tab-content slide hidden " aria-labelledby="title-references"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">13</span></div><h2 id="title-references" class="slide-title">Telusuri sumber yang digunakan</h2><div class="slide-content"><section class="work-card"><h3>Referensi yang dapat ditelusuri</h3><ul>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer">Dokumentasi resmi MCP</a> — konsep standar koneksi.</li>
+<li><a href="https://www.canva.com/help/design-from-scratch/" target="_blank" rel="noopener noreferrer">Panduan resmi Canva</a> — membuat desain dan ukuran khusus.</li>
+<li><a href="https://quran.kemenag.go.id/" target="_blank" rel="noopener noreferrer">Qur’an Kemenag</a> — periksa surah, ayat, terjemahan, dan konteks sebelum mengutip.</li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer">W3C tentang kontras teks</a> — sasaran kontras 4,5:1 untuk teks biasa dan 3:1 untuk teks besar.</li>
+</ul><p>Fitur, ketersediaan integrasi, dan tampilan aplikasi dapat berubah. Periksa panduan resmi sebelum praktik.</p></section>
+            </div></section><section id="tab-quiz0" class="tab-content slide hidden interactive" aria-labelledby="title-quiz0"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">14</span></div><h2 id="title-quiz0" class="slide-title">Kuis 1 — Instruksi yang terarah</h2><div class="slide-content"><div id="quizQuestion0" class="quiz-question"></div></div></section><section id="tab-quiz1" class="tab-content slide hidden interactive" aria-labelledby="title-quiz1"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">15</span></div><h2 id="title-quiz1" class="slide-title">Kuis 2 — Prosedur berulang</h2><div class="slide-content"><div id="quizQuestion1" class="quiz-question"></div></div></section><section id="tab-quiz2" class="tab-content slide hidden interactive" aria-labelledby="title-quiz2"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">16</span></div><h2 id="title-quiz2" class="slide-title">Kuis 3 — Fungsi MCP</h2><div class="slide-content"><div id="quizQuestion2" class="quiz-question"></div></div></section><section id="tab-quiz3" class="tab-content slide hidden interactive" aria-labelledby="title-quiz3"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">17</span></div><h2 id="title-quiz3" class="slide-title">Kuis 4 — Verifikasi manusia</h2><div class="slide-content"><div id="quizQuestion3" class="quiz-question"></div></div></section><section id="tab-quiz" class="tab-content slide hidden interactive" aria-labelledby="title-quiz"><div class="slide-top"><span class="eyebrow">PRAKTIKUM LITERASI DIGITAL II</span><span class="slide-number">18</span></div><h2 id="title-quiz" class="slide-title">Periksa hasil dan rencanakan revisi</h2><div class="slide-content"><p class="lead">Jawab empat pertanyaan pada slide sebelumnya, lalu periksa hasilnya. Setelah dinilai, buka kembali slide soal untuk membaca pembahasan.</p><button id="submitQuizBtn" class="primary" onclick="submitQuiz()">Periksa jawaban</button><div id="quizResult" role="status" tabindex="-1" class="hidden bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-6 text-center space-y-3">
+                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto text-xl font-bold shadow-md">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-emerald-800 dark:text-emerald-300">Quiz Selesai!</h3>
+                    <p id="quizScoreText" class="text-sm font-semibold text-slate-700 dark:text-slate-300"></p>
+                    <button onclick="resetQuiz()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs transition-colors shadow-sm">
+                        Ulangi Quiz
+                    </button>
+                </div>
+            <div class="closing"><strong>Tugas akhir</strong><p>Kumpulkan satu produk Canva dan catatan proses: brief, prompt, verifikasi sumber, ulasan teman, dan refleksi.</p></div></div></section></main><footer class="deck-controls"><div class="deck-location"><label class="sr-only" for="slidePicker">Pilih slide</label><select id="slidePicker" onchange="switchTab(this.value)"><option value="overview">01 · Merancang media Pendidikan Islam</option><option value="outcomes">02 · Apa yang akan Anda hasilkan</option><option value="competencies">03 · Kemampuan yang dilatih</option><option value="concepts">04 · Instruksi dan prosedur yang bisa diulang</option><option value="concepts-next">05 · Proyek dan koneksi alat</option><option value="prompt-framework">06 · Tujuh unsur prompt pendidikan</option><option value="prompt">07 · Rakit prompt sesuai kebutuhan</option><option value="skill">08 · Simpan prosedur evaluasi yang konsisten</option><option value="project-flow">09 · Dari brief menuju produk Canva</option><option value="project">10 · Periksa sebelum mengumpulkan</option><option value="worksheet">11 · Dokumentasikan keputusan Anda</option><option value="mcp">12 · Mengenal koneksi AI dengan alat</option><option value="references">13 · Telusuri sumber yang digunakan</option><option value="quiz0">14 · Kuis 1 — Instruksi yang terarah</option><option value="quiz1">15 · Kuis 2 — Prosedur berulang</option><option value="quiz2">16 · Kuis 3 — Fungsi MCP</option><option value="quiz3">17 · Kuis 4 — Verifikasi manusia</option><option value="quiz">18 · Periksa hasil dan rencanakan revisi</option></select><progress id="studyProgress" value="1" max="18" aria-label="Posisi slide"></progress></div><span id="completionText"></span><div class="deck-buttons"><button id="prevTab" class="secondary" onclick="moveTab(-1)" aria-label="Slide sebelumnya">← Kembali</button><span id="progressText" aria-live="polite"></span><button id="nextTab" onclick="moveTab(1)" aria-label="Slide berikutnya">Lanjut →</button><button id="completeTab" class="secondary" onclick="markComplete()">Tandai dipelajari</button><button class="secondary" onclick="window.print()" aria-label="Cetak semua slide">Cetak</button></div></footer><div id="appStatus" class="sr-only" role="status" aria-live="polite"></div><script>
+
+        const STORAGE='pai-presentasi-v3:';
+        let currentTab='overview', completed=[];
+        let storageAvailable=true;
+        function storeValue(key,value){try{localStorage.setItem(STORAGE+key,JSON.stringify(value));return true;}catch{storageAvailable=false;return false;}}
+        function readValue(key,fallback){try{const v=localStorage.getItem(STORAGE+key);return v===null?fallback:JSON.parse(v);}catch{storageAvailable=false;return fallback;}}
+        function announce(message){document.getElementById('appStatus').textContent=message;}
+        function updateProgress(){
+ const i=tabs.indexOf(currentTab);const n=tabs.length;
+ document.getElementById('studyProgress').value=i+1;document.getElementById('studyProgress').max=n;
+ document.getElementById('progressText').textContent=(i+1)+' / '+n;
+ document.getElementById('completeTab').textContent=completed.includes(currentTab)?'✓ Dipelajari':'Tandai dipelajari';document.getElementById('completeTab').setAttribute('aria-pressed',String(completed.includes(currentTab)));
+ document.getElementById('prevTab').disabled=i===0;document.getElementById('nextTab').disabled=i===n-1;
+ document.getElementById('slidePicker').value=currentTab;document.getElementById('completionText').textContent=completed.length+' slide dipelajari';
+ }
+        function moveTab(step){const i=tabs.indexOf(currentTab)+step;if(tabs[i]){switchTab(tabs[i],i);document.getElementById('tab-'+tabs[i]).scrollTop=0;}}
+        function markComplete(){completed=completed.includes(currentTab)?completed.filter(x=>x!==currentTab):[...completed,currentTab];storeValue('completed',completed);updateProgress();announce(completed.length+' dari '+tabs.length+' slide ditandai dipelajari.');}
+        function downloadWork(){
+          const boxes=[...document.querySelectorAll('#tab-project input[type=checkbox]')];
+          const text='CATATAN PRAKTIKUM LITERASI DIGITAL II\n'+new Date().toLocaleString('id-ID')+'\n\n'+['BRIEF','VERIFIKASI SUMBER','REFLEKSI DAN KONTRIBUSI AI'].map((title,i)=>title+'\n'+document.getElementById(['workBrief','workSources','workReflection'][i]).value).join('\n\n')+'\n\nCHECKLIST\n'+boxes.map(b=>(b.checked?'[x] ':'[ ] ')+b.parentElement.innerText).join('\n')+'\n\nPROMPT\n'+document.getElementById('generatedPromptText').innerText;
+          const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='Catatan_Praktikum_PAI.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);announce('Catatan diunduh.');
+        }
+
+        let soundEnabled = false;
+        let audioCtx = null;
+
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const btnText = document.getElementById('soundText');
+            const icon = document.getElementById('soundIcon');
+            document.getElementById('soundToggle').setAttribute('aria-pressed', String(soundEnabled));
+            if (soundEnabled) {
+                btnText.innerText = "Suara: On";
+                icon.className = "fa-solid fa-volume-high text-emerald-600";
+                if (!audioCtx) {
+                    const Audio = window.AudioContext || window.webkitAudioContext;
+                    if (!Audio) { soundEnabled=false; btnText.innerText='Suara tidak tersedia'; document.getElementById('soundToggle').setAttribute('aria-pressed','false'); return; }
+                    try { audioCtx = new Audio(); } catch { soundEnabled=false; btnText.innerText='Suara tidak tersedia'; document.getElementById('soundToggle').setAttribute('aria-pressed','false'); return; }
+                }
+                playBeep(587.33, 0.1); // D5
+            } else {
+                btnText.innerText = "Suara: Off";
+                icon.className = "fa-solid fa-volume-xmark";
+            }
+        }
+
+        function playBeep(frequency, duration) {
+            if (!soundEnabled || !audioCtx) return;
+            try {
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.value = frequency;
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function playClickSound() {
+            playBeep(440, 0.08);
+        }
+
+        function playSuccessSound() {
+            if (!soundEnabled) return;
+            setTimeout(() => playBeep(523.25, 0.1), 0);   // C5
+            setTimeout(() => playBeep(659.25, 0.1), 100); // E5
+            setTimeout(() => playBeep(783.99, 0.2), 200); // G5
+        }
+
+        function playErrorSound() {
+            if (!soundEnabled) return;
+            setTimeout(() => playBeep(220, 0.15), 0);
+            setTimeout(() => playBeep(185, 0.2), 150);
+        }
+
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            playClickSound();
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                themeIcon.className = "fa-solid fa-moon";
+            } else {
+                html.classList.add('dark');
+                themeIcon.className = "fa-solid fa-sun";
+            }
+            document.getElementById('themeToggle').setAttribute('aria-pressed',String(html.classList.contains('dark')));
+            storeValue('theme',html.classList.contains('dark')?'dark':'light');
+        }
+
+        // Tab Navigation
+        const tabs = ["overview", "outcomes", "competencies", "concepts", "concepts-next", "prompt-framework", "prompt", "skill", "project-flow", "project", "worksheet", "mcp", "references", "quiz0", "quiz1", "quiz2", "quiz3", "quiz"];
+        function switchTab(tabId){
+ if(!tabs.includes(tabId)) return;
+ currentTab=tabId;playClickSound();
+ tabs.forEach(t=>{const el=document.getElementById('tab-'+t);el.classList.toggle('hidden',t!==tabId);el.setAttribute('aria-hidden',String(t!==tabId));});
+ storeValue('tab',tabId);updateProgress();
+ document.title=(tabs.indexOf(tabId)+1)+' / '+tabs.length+' — Praktikum Literasi Digital II';
+ }
+        // Prompt Generator dynamic text update
+        document.getElementById('genJenjang').addEventListener('change', updateGenerator);
+        document.getElementById('genProduk').addEventListener('change', updateGenerator);
+        document.getElementById('genTopik').addEventListener('input', updateGenerator);
+
+        function updateGenerator() {
+            const jenjang = document.getElementById('genJenjang').value;
+            const produk = document.getElementById('genProduk').value;
+            const topik = document.getElementById('genTopik').value.trim() || '[isi topik pembelajaran]';
+            const compact = /Poster|Infografik/.test(produk);
+            const structure = compact ? 'judul, satu pesan utama, tiga tindakan konkret, dan satu ajakan; batasi teks inti 90 kata' : /Presentasi/.test(produk) ? 'enam slide: tujuan, masalah, konsep, contoh, latihan, dan refleksi' : 'tujuan belajar, tiga bagian materi, contoh, latihan, serta pembahasan';
+            const text = `Bertindaklah sebagai perancang media pembelajaran PAI. Buat rancangan ${produk.toLowerCase()} tentang ${topik} untuk ${jenjang}. Tujuan: pembaca dapat menjelaskan tiga gagasan utama dan memilih tindakan yang tepat pada satu studi kasus. Susun ${structure}. Gunakan bahasa Indonesia sesuai jenjang; jangan mengarang ayat, hadis, statistik, atau sumber. Tandai klaim yang belum terverifikasi dan pisahkan dari saran desain. Sajikan tabel bagian, teks, dan catatan verifikasi. Kriteria: tepat isi, sesuai audiens, terbaca di ponsel. Hasil tetap diperiksa manusia sebelum dipakai.`;
+            document.getElementById('generatedPromptText').innerText = text;
+            storeValue('generator',{jenjang,produk,topik:document.getElementById('genTopik').value});
+        }
+
+        async function copyText(elementId, buttonId, original) {
+            const text = document.getElementById(elementId).innerText;
+            const label=document.getElementById(buttonId);
+            try {
+                if(navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
+                else {
+                    const area=document.createElement('textarea'); area.value=text; area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+                    let ok=false;try{ok=document.execCommand('copy');}finally{area.remove();}
+                    if(!ok) throw new Error('copy');
+                }
+                label.innerText='Berhasil disalin'; playSuccessSound(); announce('Teks berhasil disalin.');
+            } catch {
+                label.innerText='Salin manual dari kotak teks';
+                const range=document.createRange();range.selectNodeContents(document.getElementById(elementId));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);
+                announce('Penyalinan otomatis tidak tersedia. Teks dipilih; gunakan menu salin perangkat.');
+            }
+            setTimeout(()=>label.innerText=original,2500);
+        }
+        function copyGeneratedPrompt(){ return copyText('generatedPromptText','copyPromptBtnText','Salin Prompt Lengkap'); }
+        function copySkillTemplate(){ return copyText('skillTemplateBox','copySkillBtnText','Salin Template Skill'); }
+
+        // Quiz Data & Logic
+        const quizData = [
+            {
+                question: "Apa tujuan utama penggunaan kerangka TUJUAN + PERAN + KONTEKS + TUGAS + BATASAN + FORMAT + KRITERIA dalam menyusun prompt?",
+                options: [
+                    { text: "Membuat prompt menjadi sangat panjang tanpa tujuan jelas", isCorrect: false, rationale: "Prompt yang panjang tanpa struktur tidak menjamin kualitas hasil." },
+                    { text: "Menghasilkan instruksi presisi agar AI memberikan respons terarah dan siap diolah", isCorrect: true, rationale: "Kerangka terstruktur membantu AI memahami konteks, batasan, dan ekspektasi hasil secara tepat." },
+                    { text: "Menghilangkan kebutuhan verifikasi fakta secara mandiri", isCorrect: false, rationale: "Verifikasi fakta oleh manusia tetap wajib dilakukan terlepas seberapa baik prompt dibuat." },
+                    { text: "Menggantikan peran dosen dalam mengevaluasi mahasiswa", isCorrect: false, rationale: "AI adalah mitra berpikir, bukan pengganti penilaian profesional dosen." }
+                ],
+                hint: "Perhatikan bagaimana struktur memperjelas instruksi kepada AI."
+            },
+            {
+                question: "Mengapa mahasiswa disarankan membuat SKILL Evaluator Media Pembelajaran PAI?",
+                options: [
+                    { text: "Agar dapat mengulang prosedur pemeriksaan kualitas secara konsisten tanpa menyusun aturan dari nol", isCorrect: true, rationale: "Skill dalam alur kerja AI adalah prosedur terstruktur yang dapat digunakan berulang secara konsisten." },
+                    { text: "Agar AI dapat mendesain otomatis infografik Canva tanpa campur tangan manusia", isCorrect: false, rationale: "Skill tidak mendesain secara otomatis tanpa kontrol editor." },
+                    { text: "Agar terbebas dari tugas membuat proyek Canva", isCorrect: false, rationale: "Praktikum tetap mewajibkan pembuatan produk nyata." },
+                    { text: "Agar dalil agama dapat diarang secara otomatis oleh sistem", isCorrect: false, rationale: "AI tidak boleh digunakan untuk mengarang dalil atau kutipan agama." }
+                ],
+                hint: "Pikirkan tentang efisiensi prosedur kerja yang dapat diulang."
+            },
+            {
+                question: "Apa fungsi utama dari MCP (Model Context Protocol) dalam ekosistem AI?",
+                options: [
+                    { text: "Sebagai aplikasi pembuat desain grafis utama", isCorrect: false, rationale: "Canva adalah alat desain, bukan protokol integrasi data." },
+                    { text: "Sebagai standar yang menghubungkan aplikasi AI dengan sumber data dan alat eksternal", isCorrect: true, rationale: "MCP menyediakan standar koneksi. Keamanan tetap memerlukan pembatasan izin dan pemeriksaan tindakan." },
+                    { text: "Sebagai pengganti model bahasa besar (LLM)", isCorrect: false, rationale: "MCP adalah protokol konektor, bukan model AI." },
+                    { text: "Sebagai syarat wajib kelulusan praktikum dasar", isCorrect: false, rationale: "MCP adalah pengayaan lanjutan dan tidak wajib untuk menyelesaikan proyek dasar Canva." }
+                ],
+                hint: "Perhatikan kata kunci 'protokol penghubung dengan data eksternal'."
+            },
+            {
+                question: "Langkah apa yang PALING tepat dilakukan setelah AI menghasilkan rancangan teks materi?",
+                options: [
+                    { text: "Langsung menyalin seluruh teks ke Canva tanpa pemeriksaan", isCorrect: false, rationale: "Hal ini berisiko meloloskan informasi keliru atau dalil buatan AI." },
+                    { text: "Melakukan verifikasi fakta, rujukan keagamaan, dan penyesuaian pedagogis secara mandiri", isCorrect: true, rationale: "Verifikasi ketat oleh manusia wajib dilakukan sebelum draf dipindahkan ke media Canva." },
+                    { text: "Menghapus semua draf dan menulis ulang seluruhnya secara manual", isCorrect: false, rationale: "AI tetap berfungsi sebagai mitra draf awal yang mempercepat proses kerja." },
+                    { text: "Menyerahkan penilaian sepenuhnya kepada fitur AI assistant", isCorrect: false, rationale: "Keputusan editorial dan etika berada di tangan manusia." }
+                ],
+                hint: "Ingat pentingnya peran verifikasi manusia sebelum publikasi."
+            }
+        ];
+
+        let userAnswers = {};
+        let quizSubmitted = false;
+
+        function renderQuiz(){
+ quizData.forEach((q,i)=>{
+ const options=q.options.map((o,j)=>`<label class="quiz-option"><input type="radio" name="q_${i}" value="${j}" ${userAnswers[i]===j?'checked':''} ${quizSubmitted?'disabled':''} onchange="selectAnswer(${i},${j})"><span><b>${String.fromCharCode(65+j)}</b> ${o.text}</span></label>`).join('');
+ document.getElementById('quizQuestion'+i).innerHTML=`<fieldset><legend>${q.question}</legend><div class="options">${options}</div><details><summary>Petunjuk</summary><p>${q.hint}</p></details><div id="feedback_${i}" class="hidden" role="status"></div></fieldset>`;
+ });
+ const btn=document.getElementById('submitQuizBtn');btn.disabled=false;btn.textContent='Periksa jawaban';
+ }
+        function selectAnswer(qIdx, optIdx) {
+            playClickSound();
+            if (quizSubmitted) return;
+            userAnswers[qIdx] = optIdx;
+            storeValue('quiz',{answers:userAnswers,submitted:false});
+        }
+
+        function submitQuiz(restoring=false) {
+            const missing=quizData.findIndex((q,i)=>!Number.isInteger(userAnswers[i]));
+            if(missing!==-1){switchTab('quiz'+missing);announce('Jawab semua soal terlebih dahulu. Soal '+(missing+1)+' belum dijawab.');document.querySelector('[name="q_'+missing+'"]').focus(); return;}
+            quizSubmitted=true;
+            if(!restoring) playClickSound();
+            let score = 0;
+            quizData.forEach((q, qIdx) => {
+                const feedbackDiv = document.getElementById(`feedback_${qIdx}`);
+                feedbackDiv.classList.remove('hidden');
+                const selected = userAnswers[qIdx];
+                const correctOptIndex = q.options.findIndex(o => o.isCorrect);
+
+                if (selected === correctOptIndex) {
+                    score++;
+                    feedbackDiv.className = "mt-2 p-3 rounded-xl text-xs bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800";
+                    feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-check mr-1.5"></i> <strong>Benar!</strong> ${q.options[correctOptIndex].rationale}`;
+                } else {
+                    feedbackDiv.className = "mt-2 p-3 rounded-xl text-xs bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800";
+                    let selectedText = selected !== undefined ? q.options[selected].text : "Belum dijawab";
+                    feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1.5"></i> <strong>Kurang tepat.</strong> Pilihan Anda ("${selectedText}"). ${q.options[correctOptIndex].rationale}`;
+                }
+            });
+
+            document.querySelectorAll('.quiz-question input').forEach(el=>el.disabled=true);
+            document.getElementById('submitQuizBtn').disabled=true;
+            document.getElementById('submitQuizBtn').textContent='Jawaban diperiksa — pilih Ulangi Kuis untuk mencoba lagi';
+            storeValue('quiz',{answers:userAnswers,submitted:true});
+            if (!restoring && score === quizData.length) {
+                playSuccessSound();
+            } else if (!restoring) {
+                playErrorSound();
+            }
+
+            const resultBox = document.getElementById('quizResult');
+            resultBox.classList.remove('hidden');
+            document.getElementById('quizScoreText').innerText = `Skor Anda: ${score} dari ${quizData.length} (${Math.round((score/quizData.length)*100)}%)`;
+            if(!restoring){switchTab('quiz');resultBox.focus();resultBox.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest' });}
+        }
+
+        function resetQuiz() {
+            playClickSound();
+            userAnswers = {}; quizSubmitted=false;
+            storeValue('quiz',{answers:{},submitted:false});
+            document.getElementById('quizResult').classList.add('hidden');
+            renderQuiz();switchTab('quiz0');
+        }
+
+        // Initialization follows after storage and navigation setup.
+
+        const remembered=readValue('theme',null);
+        const dark=remembered==='dark'||(remembered===null&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark',dark);document.getElementById('themeIcon').className=dark?'fa-solid fa-sun':'fa-solid fa-moon';document.getElementById('themeToggle').setAttribute('aria-pressed',String(dark));
+        const savedGenerator=readValue('generator',{});
+        if(savedGenerator && typeof savedGenerator==='object'){
+          for(const [id,key] of [['genJenjang','jenjang'],['genProduk','produk'],['genTopik','topik']]){const el=document.getElementById(id);if(typeof savedGenerator[key]==='string' && (el.tagName!=='SELECT'||[...el.options].some(o=>o.value===savedGenerator[key]))) el.value=savedGenerator[key];}
+        }
+        updateGenerator();
+        const checks=[...document.querySelectorAll('#tab-project input[type=checkbox]')];const savedChecks=readValue('checks',[]);
+        function updateChecks(){document.getElementById('checkCount').textContent='('+checks.filter(c=>c.checked).length+'/8)';storeValue('checks',checks.map(c=>c.checked));}
+        checks.forEach((c,i)=>{c.checked=Array.isArray(savedChecks)&&savedChecks[i]===true;c.addEventListener('change',updateChecks);});updateChecks();
+        ['workBrief','workSources','workReflection'].forEach(id=>{const el=document.getElementById(id);const v=readValue(id,'');el.value=typeof v==='string'?v:'';el.addEventListener('input',()=>{const ok=storeValue(id,el.value);document.getElementById('saveStatus').textContent=ok?'Catatan tersimpan di peramban ini.':'Penyimpanan tidak tersedia. Unduh catatan sebelum menutup halaman.';});});
+        const savedCompleted=readValue('completed',[]);completed=Array.isArray(savedCompleted)?[...new Set(savedCompleted.filter(t=>tabs.includes(t)))]:[];
+        const savedQuiz=readValue('quiz',{});
+        if(savedQuiz && typeof savedQuiz.answers==='object' && savedQuiz.answers){for(let i=0;i<quizData.length;i++){const v=savedQuiz.answers[i];if(Number.isInteger(v)&&quizData[i].options[v])userAnswers[i]=v;}}
+        renderQuiz();if(savedQuiz && savedQuiz.submitted===true && Object.keys(userAnswers).length===quizData.length) submitQuiz(true);
+        const savedTab=readValue('tab','overview');switchTab(tabs.includes(savedTab)?savedTab:'overview');
+        document.querySelectorAll('i.fa-solid').forEach(i=>i.setAttribute('aria-hidden','true'));
+        if(!storageAvailable)document.getElementById('saveStatus').textContent='Penyimpanan tidak tersedia. Unduh catatan sebelum menutup halaman.';
+
+    
+function toggleFullscreen(){
+ const el=document.documentElement;
+ if(document.fullscreenElement){if(document.exitFullscreen)document.exitFullscreen().catch(()=>announce('Tidak dapat keluar layar penuh.'));}
+ else if(el.requestFullscreen) el.requestFullscreen().catch(()=>announce('Layar penuh tidak tersedia; gunakan menu layar penuh peramban.'));
+ else announce('Gunakan menu layar penuh peramban.');
+}
+document.addEventListener('fullscreenchange',()=>{document.getElementById('fullscreenBtn').setAttribute('aria-pressed',String(!!document.fullscreenElement));document.getElementById('fullscreenBtn').textContent=document.fullscreenElement?'↙ Keluar layar penuh':'⛶ Layar penuh';});
+document.addEventListener('keydown',e=>{
+ if(e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey || e.target.closest('input,textarea,select,[contenteditable]'))return;
+ if(e.key===' ' && e.target.closest('button,a,summary'))return;
+ if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();moveTab(1);}
+ if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();moveTab(-1);}
+ if(e.key==='Home'){e.preventDefault();switchTab(tabs[0]);}
+ if(e.key==='End'){e.preventDefault();switchTab(tabs.at(-1));}
+ if(e.key.toLowerCase()==='f'){e.preventDefault();toggleFullscreen();}
+});
+let startX=0,startY=0;
+document.getElementById('mainContent').addEventListener('touchstart',e=>{startX=e.changedTouches[0].screenX;startY=e.changedTouches[0].screenY;},{passive:true});
+document.getElementById('mainContent').addEventListener('touchend',e=>{if(e.target.closest('input,textarea,select,button,a,label,details'))return;const dx=e.changedTouches[0].screenX-startX;const dy=e.changedTouches[0].screenY-startY;if(Math.abs(dx)>80&&Math.abs(dx)>Math.abs(dy)*1.5)moveTab(dx<0?1:-1);},{passive:true});
+</script></body></html>
